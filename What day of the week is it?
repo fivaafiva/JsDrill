@@ -1,0 +1,38 @@
+The days of the week are numbered as follows: 0 - 'Sunday', 1 - 'Monday', 2 - 'Tuesday', 3 - 'Wednesday', 4 - 'Thursday', 5 - 'Friday', 6 - 'Saturday'.
+
+k is an integer number from 1 to 365. Determine the name of the day of the week for the k-th day of the year, assuming January 1 was Monday.
+
+Write a function named dayOfWeek that takes k as an argument (a number between 1 and 365 is the day of the year) and returns the name of the day of the week.
+
+Examples:
+
+dayOfWeek (3)  - "Wednesday";
+dayOfWeek (14) -  "Sunday".
+
+Solution:
+function dayOfWeek(k){
+k = k % 7;
+  switch(n) {
+    case 0:
+           return 'Sunday';
+           break;
+    case 1:
+           return 'Monday';
+           break;   
+    case 2:
+           return 'Tuesday';
+           break; 
+    case 3:
+           return 'Wednesday';
+           break; 
+    case 4:
+           return 'Thursday';
+           break; 
+    case 5:
+           return 'Friday';
+           break; 
+    case 6:
+           return 'Saturday';
+           break; 
+  }      
+}
